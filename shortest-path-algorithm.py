@@ -7,6 +7,8 @@ my_graph = {
     'F': [('B', 2), ('D', 3)]
 }
 
+
+
 def shortest_path(graph, start, target = ''):
     unvisited = list(graph)
     distances = {node: 0 if node == start else float('inf') for node in graph}
